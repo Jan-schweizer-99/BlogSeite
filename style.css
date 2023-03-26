@@ -2,56 +2,97 @@
 
 /* Header-Styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #242424;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+html {
+  background-color: #242424;
+}
+
+.logo img {
+  height: 90px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #029911;
+}
+
+/* Main-Styles */
+main {
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #171717;
+  color: #ffffff;
+}
+
+/* Footer-Styles */
+footer {
+  background-color: #242424;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #029911;
+}
+
+.div-box {
+  display: flex;
+  align-items: center;
+}
+
+.bild {
+  max-width: 50%;
+  margin-left: 2em;
+}
+
+.text {
+  flex: 1;
+}
+
+/* Media Query für Mobilgeräte */
+@media only screen and (max-width: 768px) {
+  /* Bild über dem Text */
+  .div-box {
+    flex-direction: column;
   }
-  
-  .logo img {
-    height: 90px;
+
+  .bild {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 1em;
   }
-  
-  nav ul {
-    display: flex;
-    list-style-type: none;
+
+  .text {
+    text-align: justify;
   }
-  
-  nav li {
-    margin-left: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  
-  nav a:hover {
-    color: #029911;
-  }
-  
-  /* Main-Styles */
-  main {
-    margin-top: 80px;
-    padding: 20px;
-  }
-  
-  /* Footer-Styles */
-  footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #000000;
-  }
-  
+}
+
+.text-container h2 {
+  margin-top: 0;
+}
