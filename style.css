@@ -69,6 +69,7 @@ footer {
 .bild {
   max-width: 50%;
   margin-left: 2em;
+  margin-right: 2em;
 }
 
 .text {
@@ -76,7 +77,7 @@ footer {
 }
 
 /* Media Query für Mobilgeräte */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
   /* Bild über dem Text */
   .div-box {
     flex-direction: column;
@@ -85,14 +86,11 @@ footer {
   .bild {
     max-width: 100%;
     margin-left: 0;
+    margin-right: 0;
     margin-bottom: 1em;
   }
-
-  .text {
-    text-align: justify;
-  }
 }
-
+  
 .text-container h2 {
   margin-top: 0;
 }
