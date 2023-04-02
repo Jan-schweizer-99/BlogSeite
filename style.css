@@ -72,6 +72,12 @@ footer {
   margin-right: 2em;
 }
 
+.video {
+  max-width: 20%;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
 .text {
   flex: 1;
 }
@@ -84,6 +90,12 @@ footer {
   }
 
   .bild {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  .video {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
